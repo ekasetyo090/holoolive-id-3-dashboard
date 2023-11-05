@@ -1,0 +1,6 @@
+google_api_python_client==2.106.0
+matplotlib==3.7.0
+numpy==1.23.5
+pandas==1.5.3
+seaborn==0.13.0
+streamlit==1.27.1
