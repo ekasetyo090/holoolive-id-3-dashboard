@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import re
+import regex as re
 from googleapiclient.discovery import build
 
 api_key = "AIzaSyB3o1aYtHuqAioKQ_WAW4qGrVegolHtAJw"
