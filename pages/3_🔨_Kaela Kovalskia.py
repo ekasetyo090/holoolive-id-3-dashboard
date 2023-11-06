@@ -62,7 +62,6 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Summary", "Over Range Statistic",
 # summary tab
 with tab1:
     st.subheader('Statistic Change From 2nd to Last Video')
-    st.dataframe(df_kaela)
     col1, col2 = st.columns(2)
     
     with col1:
