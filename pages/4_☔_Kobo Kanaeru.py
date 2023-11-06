@@ -300,7 +300,6 @@ with tab4:
     st.write(mesage_mean)
     st.write(mesage_mode)
     st.write(mesage_std)
-    st.dataframe(data=df_kobo_spread)
 
 # Top 50 Videos All Time tab
 with tab5:
