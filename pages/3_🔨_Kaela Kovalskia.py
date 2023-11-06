@@ -281,15 +281,15 @@ with tab4:
     mesage_mean = f"Mean = {round(df_kaela_spread.mean(),2)}"
     modes = df_kaela_spread.mode(dropna=True)
     mesage_mode = f"Mode = {modes[0]}"
-    mesage_std = f"Standard Deviation = {round(df_kaela_spread.std(),2)}"
+    mesage_std = f"Standard Deviation (STD)= {round(df_kaela_spread.std(),2)}"
     if spread_metrics == "Duration":
         spread_title = f'Spread Of {spread_metrics} (Seconds)'
     else:
         spread_title = f'Spread Of {spread_metrics}'
     # draw spread histogram chart
     fig = plt.figure(figsize = (10, 5))
-    line_sale_median = plt.axvline(x = df_kaela_spread.median(), color = 'Blue', ls = '--', lw = 1.5, label = "median")
-    line_sale_mean = plt.axvline(x = df_kaela_spread.mean(), color = 'green', ls = '--', lw = 1.5, label = "mean")
+    line_sale_median = plt.axvline(x = df_kaela_spread.median(), color = 'Blue', ls = '--', lw = 1.5, label = "Median")
+    line_sale_mean = plt.axvline(x = df_kaela_spread.mean(), color = 'green', ls = '--', lw = 1.5, label = "Mean")
     line_sale_STD = plt.axvline(x = df_kaela_spread.std(), color = 'red', ls = '--', lw = 1.5, label = "STD")
     ## legend
     legend = plt.legend(handles = [line_sale_STD, line_sale_mean, line_sale_median], loc = 1)
